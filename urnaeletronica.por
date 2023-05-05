@@ -1,53 +1,56 @@
 programa
 {
 	
-	funcao inicio(){
-	inteiro candidato1
-	inteiro candidato2
-	inteiro candidato3
-	inteiro votoembranco
-	inteiro votonulo
-	inteiro encerraravotacao
-	escreva("Digite opção de voto do candidato 1:")
-	leia(candidato1)
-	escreva("Digite opção de voto do candidato 2:")
-	leia(candidato2)
-	escreva("Digite opção de voto do candidato 3:")
-	leia(candidato3)
-	escreva("Digite opção de voto em branco" )
-	leia(votoembranco)
-	 escreva("Digite opção de voto nulo" )
-	 leia(votonulo)
-	 escreva("Digite o numero 0: para encerrar a votação")
-	 leia(encerraravotacao)
-	 escolha()
-	 	caso 1:
-	 	candidato1=candidato1+1
-	 	escreva("candidato 1 recebeu um voto")
-	 	pare
-	 	caso 2:
-	 	candidato2=candidato2+1
-	 	escreva("candidato 2 recebeu um voto")
-	 	pare
-	 	caso 3:
-	 	candidato3=candidato3+1
-	 	escreva("candidato3 recebeu um voto")
-	 	pare
-	 	caso
-	 	
-	 }
-	 
-	 
-	 
-	 
-	 
-	 
-	
-	
-	 
-	
-	
-
+	funcao inicio()
+	{
+		inteiro numeroVoto
+		inteiro numeroDeVotoCandidato1 = 0
+		inteiro numeroDeVotoCandidato2 = 0
+		inteiro numeroDeVotoCandidato3 = 0  
+		inteiro numeroDeVotoEmBranco = 0
+		inteiro numeroDeVotoNulo = 0
+		inteiro numeroTotalDeVotos = 0
+		
+		faca {
+		
+			escreva("1 -> Candidato 1\n")
+			escreva("2 -> Candidato 2\n")
+			escreva("3 -> Candidato 3\n")
+			escreva("5 -> Voto em branco\n")
+			escreva("8 -> Voto nulo\n")
+			escreva("0 -> Encerrar a votação\n")
+			escreva("Digite  o número do voto: ")
+			leia(numeroVoto)
+			escolha (numeroVoto) {
+				caso 1:
+				escreva("você votou no candidato 1\n")
+				numeroDeVotoCandidato1++
+				numeroTotalDeVotos++
+				pare
+				caso 2:
+				numeroDeVotoCandidato2++
+				numeroTotalDeVotos++
+				escreva("você votou no candidato 2\n")
+				pare
+				caso 3:
+				numeroDeVotoCandidato3++
+				numeroTotalDeVotos++
+				escreva("você votou no candidato 3\n")
+				pare
+				caso 5:
+				numeroDeVotoEmBranco++
+				numeroTotalDeVotos++
+				escreva("você votou voto em branco\n")
+				pare
+				caso 8:
+				numeroDeVotoNulo++
+				numeroTotalDeVotos++
+				escreva("você votou voto nulo\n")
+				pare
+				caso 0:
+				pare
+			}
+		} enquanto (numeroVoto != 0)	
 	
 	}
 }
@@ -57,9 +60,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 846; 
+ * @POSICAO-CURSOR = 1208; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {numeroVoto, 6, 10, 10}-{numeroDeVotoCandidato1, 7, 10, 22}-{numeroDeVotoCandidato2, 8, 10, 22}-{numeroDeVotoCandidato3, 9, 10, 22}-{numeroDeVotoEmBranco, 10, 10, 20}-{numeroDeVotoNulo, 11, 10, 16}-{numeroTotalDeVotos, 12, 10, 18};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = vetor, matriz, funcao;
+ * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
