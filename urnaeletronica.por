@@ -51,6 +51,13 @@ programa
 				pare
 			}
 		} enquanto (numeroVoto != 0)	
+
+		// apresentar o resultado da votaçaõ
+		escreva("Resultado de voto candidato 1",numeroDeVotoCandidato1)
+		escreva("Resultado de voto candidato 2",numeroDeVotoCandidato2)
+		escreva("Resultado de voto candidato 3",numeroDeVotoCandidato3)
+		escreva("Resultado de voto em branco", numeroDeVotoEmBranco)
+		escreva("Resultado de voto nulo",numeroDeVotoNulo) 
 	
 	}
 }
@@ -60,7 +67,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1208; 
+ * @POSICAO-CURSOR = 1562; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {numeroVoto, 6, 10, 10}-{numeroDeVotoCandidato1, 7, 10, 22}-{numeroDeVotoCandidato2, 8, 10, 22}-{numeroDeVotoCandidato3, 9, 10, 22}-{numeroDeVotoEmBranco, 10, 10, 20}-{numeroDeVotoNulo, 11, 10, 16}-{numeroTotalDeVotos, 12, 10, 18};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
