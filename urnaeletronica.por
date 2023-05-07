@@ -9,7 +9,7 @@ programa
 		inteiro numeroDeVotoCandidato3 = 0  
 		inteiro numeroDeVotoEmBranco = 0
 		inteiro numeroDeVotoNulo = 0
-		inteiro numeroTotalDeVotos = 0
+		inteiro SomaTotalDeVotos = 0
 		
 		faca {
 		
@@ -25,40 +25,48 @@ programa
 				caso 1:
 				escreva("você votou no candidato 1\n")
 				numeroDeVotoCandidato1++
-				numeroTotalDeVotos++
+				SomaTotalDeVotos++
 				pare
 				caso 2:
 				numeroDeVotoCandidato2++
-				numeroTotalDeVotos++
+				SomaTotalDeVotos++
 				escreva("você votou no candidato 2\n")
 				pare
 				caso 3:
 				numeroDeVotoCandidato3++
-				numeroTotalDeVotos++
+				SomaTotalDeVotos++
 				escreva("você votou no candidato 3\n")
 				pare
 				caso 5:
 				numeroDeVotoEmBranco++
-				numeroTotalDeVotos++
+				SomaTotalDeVotos++
 				escreva("você votou voto em branco\n")
 				pare
 				caso 8:
 				numeroDeVotoNulo++
-				numeroTotalDeVotos++
+				SomaTotalDeVotos++
 				escreva("você votou voto nulo\n")
 				pare
 				caso 0:
+				escreva("encerrar a votação\n")
 				pare
 			}
-		} enquanto (numeroVoto != 0)	
-
-		// apresentar o resultado da votaçaõ
+		} enquanto (numeroVoto != 0)
+		escreva("Apresentar o resultado da votação/Porcentagem")     
 		escreva("Resultado de voto candidato 1",numeroDeVotoCandidato1)
 		escreva("Resultado de voto candidato 2",numeroDeVotoCandidato2)
 		escreva("Resultado de voto candidato 3",numeroDeVotoCandidato3)
 		escreva("Resultado de voto em branco", numeroDeVotoEmBranco)
-		escreva("Resultado de voto nulo",numeroDeVotoNulo)
-		leia(ApresentaroResultadodeCadaVotacao) 
+		escreva("Resultado de voto nulo",numeroDeVotoNulo) 	
+
+		// apresentar o resultado da votaçaõ
+		SomaTotalDeVotos = numeroDeVotoCandidato1 + numeroDeVotoCandidato2 + numeroDeVotoCandidato3 +  numeroDeVotoEmBranco + numeroDeVotoNulo
+		escreva("Apresentar o resultado da votação/Porcentagem")     
+		escreva("Resultado de voto candidato 1 =", (numeroDeVotoCandidato1 * 100 / SomaTotalDeVotos), "%")
+		escreva("Resultado de voto candidato 2 =", (numeroDeVotoCandidato2 * 100 / SomaTotalDeVotos), "%")
+		escreva("Resultado de voto candidato 3 =", (numeroDeVotoCandidato3 * 100 / SomaTotalDeVotos), "%")
+		escreva("Resultado de voto em branco =",   (numeroDeVotoEmBranco * 100 / SomaTotalDeVotos), "%")
+		escreva("Resultado de voto nulo =", (numeroDeVotoNulo * 100 / SomaTotalDeVotos), "%")
 	
 	}
 }
@@ -68,9 +76,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1604; 
+ * @POSICAO-CURSOR = 2342; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {numeroVoto, 6, 10, 10}-{numeroDeVotoCandidato1, 7, 10, 22}-{numeroDeVotoCandidato2, 8, 10, 22}-{numeroDeVotoCandidato3, 9, 10, 22}-{numeroDeVotoEmBranco, 10, 10, 20}-{numeroDeVotoNulo, 11, 10, 16}-{numeroTotalDeVotos, 12, 10, 18};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
