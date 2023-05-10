@@ -50,16 +50,16 @@ programa
 				caso 0:
 				escreva("encerrar a votação\n")
 				pare
-			}
-		} enquanto (numeroVoto != 0)
-		escreva("Apresentar o resultado da votação/Porcentagem")     
+			
+		 enquanto (numeroVoto != 0) {
+		// apresentar o resultado da votação    
 		escreva("Resultado de voto candidato 1",numeroDeVotoCandidato1)
 		escreva("Resultado de voto candidato 2",numeroDeVotoCandidato2)
 		escreva("Resultado de voto candidato 3",numeroDeVotoCandidato3)
 		escreva("Resultado de voto em branco", numeroDeVotoEmBranco)
 		escreva("Resultado de voto nulo",numeroDeVotoNulo) 	
 
-		// apresentar o resultado da votaçaõ
+		
 		SomaTotalDeVotos = numeroDeVotoCandidato1 + numeroDeVotoCandidato2 + numeroDeVotoCandidato3 +  numeroDeVotoEmBranco + numeroDeVotoNulo
 		escreva("Apresentar o resultado da votação/Porcentagem")     
 		escreva("Resultado de voto candidato 1 =", (numeroDeVotoCandidato1 * 100 / SomaTotalDeVotos), "%")
@@ -76,7 +76,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2342; 
+ * @POSICAO-CURSOR = 2293; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
